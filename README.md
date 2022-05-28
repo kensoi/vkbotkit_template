@@ -1,5 +1,5 @@
 # Рабочий шаблон для работы с vkbotkit
-📕[Репозиторий шаблона](https://github.com/kensoi/vkbotkit) 
+📕[Репозиторий шаблона](https://github.com/kensoi/vkbotkit)  
 📘[Репозиторий vkbotkit](https://github.com/kensoi/vkbotkit)  
 📄[Использовать шаблон](https://github.com/kensoi/vkbotkit_template/generate)
 
