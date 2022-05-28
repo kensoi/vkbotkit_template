@@ -1,11 +1,11 @@
-# VkBotKit bot template
+# VkBotKit template
 
 ## Get Started
 
 ### Install
 ```sh
 pip3 install https://github.com/kensoi/vkbotkit/tarball/dev
-git clone https://github.com/kensoi/vkbotkit-bot-template
+git clone https://github.com/kensoi/vkbotkit_template
 cd ./
 ```
 
