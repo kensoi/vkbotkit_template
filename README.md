@@ -1,20 +1,47 @@
-# VkBotKit template
+# Рабочий шаблон для работы с vkbotkit
 
-## Get Started
+## Инструкция по установке
+**Шаг 0.** Используйте этот репозиторий как шаблон.
+[Использовать шаблон](https://github.com/kensoi/vkbotkit_template/generate)
 
-### Install
+**Шаг 1.** Установка
 ```sh
-pip3 install https://github.com/kensoi/vkbotkit/tarball/dev
-git clone https://github.com/kensoi/vkbotkit_template
+git clone https://github.com/author/your_bot_repo
 cd ./
+pip install -r requirements.txt
 ```
 
-### Insert your token
+**Шаг 2.а** Настройка enviroment ключей в bash
 ```sh
-export VKBOTKIT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+export PUBLIC_TOKEN=TESTTOKEN1
+export DEBUG_TOKEN=TESTTOKEN2
+export CONFIG_LOG=fc
 ```
 
-### Start bot
-```sh
-python3 app.py
+**Шаг 2.б** Конфигурация .env файла
 ```
+PUBLIC_TOKEN=TESTTOKEN1
+DEBUG_TOKEN=TESTTOKEN2
+CONFIG_LOG=fc
+```
+
+**Замечание для переменной CONFIG_LOG**: 
+```
+f - сохранение лога в файл,
+c - вывод лога в консоль
+```
+
+**Шаг 3.** Запуск бота
+В режиме отладки:
+```sh
+python3 bot.py -d
+```
+
+Обычный запуск:
+```sh
+python3 bot.py
+```
+
+
+**Готово!** Бот работает, результат будет таким:
+![Канари-чан говорит иди на***](https://sun3-11.userapi.com/s/v1/ig2/vP4GRtbDgJsUd5OXLssGVf132-I4QaiT_iGnZEzefuBSBxijiOsS0oFYBgn615iZzKJhqy8EwgC1MSYeR3yBHLi1.jpg?size=814x302&quality=96&type=album)
