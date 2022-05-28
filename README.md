@@ -37,3 +37,4 @@ python3 bot.py [-d]
 ```
 **Готово!** Бот работает, результат будет таким:
 ![Канари-чан говорит иди на***](https://sun3-11.userapi.com/s/v1/ig2/vP4GRtbDgJsUd5OXLssGVf132-I4QaiT_iGnZEzefuBSBxijiOsS0oFYBgn615iZzKJhqy8EwgC1MSYeR3yBHLi1.jpg?size=814x302&quality=96&type=album)
+P. S. Бот будет отвечать на все сообщения таким образом, так что перед добавлением в беседу стоит ознакомиться с документацией о библиотеке vkbotkit.
