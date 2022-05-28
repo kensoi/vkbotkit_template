@@ -1,8 +1,9 @@
 # Рабочий шаблон для работы с vkbotkit
+[Репозиторий vkbotkit](https://github.com/kensoi/vkbotkit)
+[Использовать шаблон](https://github.com/kensoi/vkbotkit_template/generate)
 
 ## Инструкция по установке
-**Шаг 0.** Используйте этот репозиторий как шаблон.
-[Использовать шаблон](https://github.com/kensoi/vkbotkit_template/generate)
+**Шаг 0.** Используйте этот шаблон, чтобы создать репозиторий для вашего чатбота.
 
 **Шаг 1.** Установка
 ```sh
