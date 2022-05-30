@@ -1,19 +1,30 @@
-from vkbotkit import librabot
-from vkbotkit.objects import decorators, filters, enums, library_module
-from vkbotkit.utils import message
-
+"""
+Bot application
+"""
 import asyncio
-from os import environ, getenv
+from os import (
+    environ,
+    getenv
+    )
 from sys import argv
 from dotenv import load_dotenv
+from vkbotkit import librabot
+from vkbotkit.objects import (
+    #decorators,
+    #filters,
+    enums,
+    #library_module
+)
 
 
 async def main():
+    """
+    главная функция приложения
+    """
     if "-d" in argv:
         token = environ['DEBUG_TOKEN']
         log_level = enums.log_level.DEBUG
-        print('running with DEBUG token..')
-        
+
     else:
         token = environ['PUBLIC_TOKEN']
         log_level = enums.log_level.INFO
@@ -24,7 +35,7 @@ async def main():
     bot.toolkit.configure_logger(log_level, "f" in config_log, "c" in config_log)
     bot.library.import_library()
 
-    # START POLLING 
+    # START POLLING
     await bot.start_polling()
 
 if __name__ == "__main__":

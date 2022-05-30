@@ -1,4 +1,12 @@
-from vkbotkit.objects import decorators, filters, enums, library_module
+"""
+Пример плагина для vkbotkit
+"""
+
+from vkbotkit.objects import (
+    decorators,
+    filters,
+    #enums,
+    library_module)
 
 
 HELLO_ME = """
@@ -9,6 +17,14 @@ Not even sure that this is real
 
 
 class Main(library_module):
-    @decorators.callback(filters.whichUpdate({enums.events.message_new,}))
+    """
+    docstring fix
+    """
+
+    @decorators.callback(filters.isCommand({"start",}))
     async def send_hello(self, package):
+        """
+        при получении команды '@your_bot_id start' => отправлять текст HELLO_ME
+        """
         await package.toolkit.send_reply(package, HELLO_ME)
+        
