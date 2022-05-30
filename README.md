@@ -28,6 +28,6 @@ c - вывод лога в консоль
 ```sh
 python3 bot.py [-d]
 ```
-**Готово!** Бот работает, результат будет таким:
+**Готово!** Бот работает, результат будет примерно таким:   
 ![Канари-чан](https://sun9-52.userapi.com/s/v1/ig2/5yBG60JVrtlBYspn2YdMG8KRFZBSyyPuKr0nCbpc1Ms8hzv9iHQ5toAxm9kxT3Q0w_YzKVUdqWGEQcOMbQY9xWna.jpg?size=512x249&quality=96&type=album)  
 P. S. Бот будет отвечать на все сообщения таким образом, так что перед добавлением в беседу стоит ознакомиться с документацией о библиотеке vkbotkit.
