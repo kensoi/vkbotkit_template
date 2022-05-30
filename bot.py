@@ -1,6 +1,6 @@
 from vkbotkit import librabot
 from vkbotkit.objects import decorators, filters, enums, library_module
-
+from vkbotkit.utils import message
 
 import asyncio
 from os import environ, getenv
@@ -12,6 +12,8 @@ async def main():
     if "-d" in argv:
         token = environ['DEBUG_TOKEN']
         log_level = enums.log_level.DEBUG
+        print('running with DEBUG token..')
+        
     else:
         token = environ['PUBLIC_TOKEN']
         log_level = enums.log_level.INFO
