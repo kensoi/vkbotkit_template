@@ -19,6 +19,7 @@ class NewUser(filters.Filter):
     """
     Фильтр оповещений о новых участниках
     """
+
     async def check(self, package):
         if not package.action:
             return
@@ -35,17 +36,17 @@ class Main(Library):
     """
 
     @callback(filters.IsCommand({"start",}) | NewUser())
-    async def send_hello(self, package):
+    async def send_hello(self, package, toolkit):
         """
         при получении команды '@your_bot_id start' => отправлять текст HELLO_ME
         """
-        await package.toolkit.send_reply(package, HELLO_MESSAGE)
+        await toolkit.send_reply(package, HELLO_MESSAGE)
 
 
     @callback(filters.IsCommand({"help",}))
-    async def send_help(self, package):
+    async def send_help(self, package, toolkit):
         """
         при получении команды '@your_bot_id start' => отправлять текст HELLO_ME
         """
-        await package.toolkit.send_reply(package, HELP_MESSAGE)
+        await toolkit.send_reply(package, HELP_MESSAGE)
         
