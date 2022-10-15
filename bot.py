@@ -7,7 +7,7 @@ from os import getenv
 from sys import argv
 
 from dotenv import load_dotenv
-from vkbotkit import Librabot
+from vkbotkit import Bot
 from vkbotkit.objects import enums
 
 
@@ -43,7 +43,7 @@ async def main():
     log_to_file = "f" in config_log # вывод лога в специальный файл
     log_to_console = "c" in config_log # вывод лога в консоль
 
-    bot = Librabot(token, group_id)
+    bot = Bot(token, group_id)
     bot.toolkit.configure_logger(log_level, log_to_file, log_to_console)
 
     # START POLLING

@@ -2,7 +2,7 @@
 Copyright 2022 kensoi
 """
 
-from vkbotkit.objects import callback, filters, LibraryModule
+from vkbotkit.objects import callback, filters, Library
 
 
 HELLO_MESSAGE = """
@@ -29,7 +29,7 @@ class NewUser(filters.Filter):
         return package.action == "chat_invite_user"
 
 
-class Main(LibraryModule):
+class Main(Library):
     """
     Библиотека с командами, предназначенными для приветствия пользователей
     """
