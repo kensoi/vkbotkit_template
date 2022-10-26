@@ -1,2 +1,2 @@
-https://github.com/kensoi/vkbotkit/tarball/v1.1
+https://github.com/kensoi/vkbotkit/tarball/v1.2
 python-dotenv
