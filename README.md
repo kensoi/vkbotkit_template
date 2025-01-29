@@ -10,24 +10,15 @@
 * `requirements.txt` - файл с требуемыми библиотеками для работы шаблона
 * `.env` - файл с переменными окружения
 
-## Полезные ссылки
-
-* [vkbotkit/vkbotkit](https://github.com/vkbotkit/vkbotkit/tree/v1.2)
-* [vkbotkit/examples](https://github.com/vkbotkit/examples/tree/v1.2)
-
 # Установка и настройка бота в вашем сообществе ВКонтакте  
 
 ## 0. Создайте сообщество ВКонтакте  
 
 Перейдите во вкладку "Сообщества" на сайте ВКонтакте, или используйте ссылку [vk.com/groups](https://vk.com/groups)  
 
-![Нахождение сообщества](https://github.com/kensoi/pycanarybot/blob/master/img/create_community.png?raw=true)  
-
 ## 1. Перейдите в раздел для работы с API  
 
 Перейдите во вкладку "Управление" при помощи первой ссылки в админ-меню вашего сообщества  
-
-![Управление](https://github.com/kensoi/pycanarybot/blob/master/img/management_location.png?raw=true)  
 
 Перейдите во вкладку "Работа с API"
 
@@ -35,11 +26,7 @@
 
 В шапке раздела нажмите на "Создать ключ"  
 
-![Ключи API](https://github.com/kensoi/pycanarybot/blob/master/img/api_keys.png?raw=true)  
-
 Выберите необходимые права для вашего токена, затем нажмите "Создать" и подтвердите свою личность.  
-
-![Меню с выбором прав токена](https://github.com/kensoi/pycanarybot/blob/master/img/keys_rights.png?raw=true)  
 
 ## 3. Настройте Long Poll сервер
 
@@ -54,7 +41,6 @@
 ```bash
 git clone https://github.com/your_name/your_bot.git
 cd your_bot
-git checkout v1.2
 pip install -r requirements.txt
 ```
 
